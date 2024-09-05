@@ -113,6 +113,11 @@ namespace LinqExercise
 
             employees = employees.Append(new Employee("Jane", "Smith", 35, 5)).ToList();
 
+            foreach (var worker in employees)
+            {
+                Console.WriteLine($"Employee Name: {worker.FullName} | Age: {worker.Age} | YOE: {worker.YearsOfExperience}");
+            }
+
             Console.WriteLine();
 
             Console.ReadLine();
